@@ -1,0 +1,28 @@
+{
+  "root": "apps/avidcoderr-e2e",
+  "sourceRoot": "apps/avidcoderr-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/avidcoderr-e2e/cypress.json",
+        "devServerTarget": "avidcoderr:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "avidcoderr:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/avidcoderr-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["avidcoderr"]
+}

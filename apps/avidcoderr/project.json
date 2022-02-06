@@ -1,0 +1,97 @@
+{
+  "projectType": "application",
+  "root": "apps/avidcoderr",
+  "sourceRoot": "apps/avidcoderr/src",
+  "prefix": "ls",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/avidcoderr",
+        "index": "apps/avidcoderr/src/index.html",
+        "main": "apps/avidcoderr/src/main.ts",
+        "polyfills": "apps/avidcoderr/src/polyfills.ts",
+        "tsConfig": "apps/avidcoderr/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/avidcoderr/src/favicon.ico",
+          "apps/avidcoderr/src/assets"
+        ],
+        "styles": ["apps/avidcoderr/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/avidcoderr/src/environments/environment.ts",
+              "with": "apps/avidcoderr/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "avidcoderr:build:production"
+        },
+        "development": {
+          "browserTarget": "avidcoderr:build:development"
+        }
+      },
+      "defaultConfiguration": "development",
+      "options": {
+        "proxyConfig": "apps/avidcoderr/proxy.conf.json"
+      }
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "avidcoderr:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/avidcoderr/src/**/*.ts",
+          "apps/avidcoderr/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/avidcoderr"],
+      "options": {
+        "jestConfig": "apps/avidcoderr/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
