@@ -3,7 +3,5 @@
     "editor.selectionBackground": "#1355642a"
   },
   "gitlens.currentLine.enabled": false,
-  "gitlens.codeLens.authors.enabled": false,
-  "gitlens.codeLens.recentChange.enabled": false,
   "cSpell.words": ["Coderr"]
 }
