@@ -15,8 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ls/api-interfaces": ["libs/api-interfaces/src/index.ts"],
-      "@ls/fire-hydrant": ["libs/fire-hydrant/src/index.ts"]
+      "@ac/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@ac/crypto": ["libs/crypto/src/index.ts"],
+      "@ac/firehydrant": ["libs/firehydrant/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

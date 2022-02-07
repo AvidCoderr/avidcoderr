@@ -5,6 +5,7 @@
     "api-interfaces": "libs/api-interfaces",
     "avidcoderr": "apps/avidcoderr",
     "avidcoderr-e2e": "apps/avidcoderr-e2e",
-    "fire-hydrant": "libs/fire-hydrant"
+    "crypto": "libs/crypto",
+    "firehydrant": "libs/firehydrant"
   }
 }

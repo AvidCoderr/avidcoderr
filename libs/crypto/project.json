@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/crypto-search",
+  "sourceRoot": "libs/crypto-search/src",
+  "prefix": "ac",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/crypto-search"],
+      "options": {
+        "jestConfig": "libs/crypto-search/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/crypto-search/src/**/*.ts",
+          "libs/crypto-search/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

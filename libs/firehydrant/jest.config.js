@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'fire-hydrant',
+  displayName: 'firehydrant',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -8,7 +8,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/libs/fire-hydrant',
+  coverageDirectory: '../../coverage/libs/firehydrant',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

@@ -2,7 +2,7 @@
   "projectType": "application",
   "root": "apps/avidcoderr",
   "sourceRoot": "apps/avidcoderr/src",
-  "prefix": "ls",
+  "prefix": "ac",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
