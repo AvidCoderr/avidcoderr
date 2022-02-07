@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, tap } from 'rxjs';
-import { CryptoInfo, CryptoState, serverType } from './crypto.model';
+import { CryptoInfo, CryptoState, ServerType } from './crypto.model';
 
 @Injectable({
   providedIn: 'root',
@@ -16,7 +16,7 @@ export class CryptoService {
     this.state = { ...this.state, ...state };
   }
 
-  searchAPI(symbol: string, speed: serverType): Observable<CryptoInfo> {
+  searchAPI(symbol: string, speed: ServerType): Observable<CryptoInfo> {
     this.state.inProgress = true;
     return this.http.get<CryptoInfo>(`/${speed}/api/${symbol}`).pipe(
       tap(() => {

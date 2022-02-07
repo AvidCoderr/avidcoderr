@@ -1,7 +1,7 @@
 // Model file
 
 // Server Types
-export type serverType = 'fast' | 'slow';
+export type ServerType = 'fast' | 'slow';
 
 // Shape of data received from api
 export interface CryptoInfo {
