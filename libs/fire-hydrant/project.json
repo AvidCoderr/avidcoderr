@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/fire-hydrant",
+  "sourceRoot": "libs/fire-hydrant/src",
+  "prefix": "ls",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/fire-hydrant"],
+      "options": {
+        "jestConfig": "libs/fire-hydrant/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/fire-hydrant/src/**/*.ts",
+          "libs/fire-hydrant/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

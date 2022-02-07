@@ -4,6 +4,7 @@
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
     "avidcoderr": "apps/avidcoderr",
-    "avidcoderr-e2e": "apps/avidcoderr-e2e"
+    "avidcoderr-e2e": "apps/avidcoderr-e2e",
+    "fire-hydrant": "libs/fire-hydrant"
   }
 }

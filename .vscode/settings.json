@@ -1,3 +1,6 @@
 {
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#1355642a"
+  },
   "cSpell.words": ["Coderr"]
 }

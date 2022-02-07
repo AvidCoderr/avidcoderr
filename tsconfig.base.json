@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ls/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@ls/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@ls/fire-hydrant": ["libs/fire-hydrant/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
