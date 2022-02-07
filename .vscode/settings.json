@@ -2,6 +2,9 @@
   "workbench.colorCustomizations": {
     "editor.selectionBackground": "#1355642a"
   },
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
   "gitlens.currentLine.enabled": false,
-  "cSpell.words": ["Coderr", "firehydrant"]
+  "cSpell.words": ["Coderr"],
+  "editor.lightbulb.enabled": false
 }
