@@ -1,9 +1,9 @@
-// Model file
+// Crypto Model File
 
-// Server Types
+// Server Type
 export type ServerType = 'fast' | 'slow';
 
-// Shape of data received from api
+// Crypto Data Transfer Object (DTO)
 export interface CryptoInfo {
   timestamp: number;
   symbol: string;
@@ -12,5 +12,5 @@ export interface CryptoInfo {
 
 // Crypto State
 export interface CryptoState extends CryptoInfo {
-  inProgress: boolean;
+  isLoading: boolean;
 }

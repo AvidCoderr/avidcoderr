@@ -12,15 +12,15 @@ export class CryptoService {
 
   constructor(private http: HttpClient) {}
 
-  setState(state: CryptoState): void {
+  setState(state: Partial<CryptoState>): void {
     this.state = { ...this.state, ...state };
   }
 
   searchAPI(symbol: string, speed: ServerType): Observable<CryptoInfo> {
-    this.state.inProgress = true;
+    this.state.isLoading = true;
     return this.http.get<CryptoInfo>(`/${speed}/api/${symbol}`).pipe(
       tap(() => {
-        this.state.inProgress = false;
+        this.state.isLoading = false;
       })
     );
   }
